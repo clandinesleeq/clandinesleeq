@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+
+    <div id="lightningout"></div>
+
+    <script src="https://placemakersdev--dev.sandbox.my.site.com/lightningoutmessages/lightning/lightning.out.js"></script>
+    <script>
+      $Lightning.use(
+        'c:LightningOutMessages',
+        function () {
+          $Lightning.createComponent(
+            'c:customMessages',
+            {
+              "digitalId": 'auth0|XiOVxatipxEjU0C5GRr6nZZA5HB5mPz', 
+              "orderNumber": '6891112121-1 : test streetdev',
+              "accountId": '362A1COR',
+              "componentStyle": '{"inboundBubbleStyles":"background-color: #F4F6FA; color: #000000","inboundMessageNameStyles":"color: #153872","inboundMessageTimeStampStyles":"color: #808080","outboundBubbleStyles":"background-color: #50B1CA; color: #ECECEC","outboundMessageNameStyles":"color: #153872","outboundMessageTimeStampStyles":"color: #808080"}',
+              "locationId": ''
+            },
+            'lightningout',
+            function (cmp) {
+            }
+          );
+        },
+        'https://placemakersdev--dev.sandbox.my.site.com/lightningoutmessages' // Site endpoint
+      );
+    </script>
+  </body>
+</html>
