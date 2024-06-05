@@ -1,34 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-
-    <div id="lightningout"></div>
-
-    <script src="https://placemakers--full.sandbox.my.site.com/lightningoutmessages/lightning/lightning.out.js"></script>
-    <script>
-      $Lightning.use(
-        'c:LightningOutMessages',
-        function () {
-          $Lightning.createComponent(
-            'c:customMessages',
-            {
-              "digitalId": 'auth0|62d74c3ece31eeb03f42e378', 
-              "orderNumber": 'ORD1305-003_uat : For 1009',
-              "accountId": '560AAEXT',
-              "componentStyle": '{"inboundBubbleStyles":"background-color: #F4F6FA; color: #000000","inboundMessageNameStyles":"color: #153872","inboundMessageTimeStampStyles":"color: #808080","outboundBubbleStyles":"background-color: #50B1CA; color: #ECECEC","outboundMessageNameStyles":"color: #153872","outboundMessageTimeStampStyles":"color: #808080"}',
-              "locationId": '479'
-            },
-            'lightningout',
-            function (cmp) {
-            }
-          );
-        },
-        'https://placemakers--full.sandbox.my.site.com/lightningoutmessages' // Site endpoint
-      );
-    </script>
-  </body>
+<!DOCTYPE Html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <div id="farmlandsform"></div>
+        <script src="https://placemakersdev--dev.sandbox.my.site.com/bgweb/lightning/lightning.out.js"></script>
+        <script>
+            $Lightning.use(
+                'c:BuyingGroupsWebFormApp',
+                function() {
+                    $Lightning.createComponent(
+                        'c:buyingGroupsWebFormWrapper',
+                        {
+                            "Var1": 'Farmlands',
+                            "Var2": '',
+                            "Var3": '',
+                            "Var4": ''
+                        },
+                        'farmlandsform',
+                        function(cmp) {
+                        }
+                    );
+                },
+                'https://placemakersdev--dev.sandbox.my.site.com/bgweb'
+            );
+        </script>
+    </body>
 </html>
